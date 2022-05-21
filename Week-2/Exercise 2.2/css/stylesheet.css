@@ -1,0 +1,101 @@
+
+.container{
+   
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 200;
+    margin: auto;
+
+}
+
+
+.red_square{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    animation: rotateRedSquare 1s;
+    animation-play-state: paused;
+}
+
+@keyframes rotateRedSquare{
+    0%{
+    }
+
+    100%{
+        transform: rotate(90deg);
+        transform-origin: top left;
+    }
+}
+
+.yellow_square{
+    height: 50px;
+    width: 50px;
+    background-color:yellow;
+    animation: rotateYellowSquare 1s;
+    animation-play-state: paused;
+
+   
+}
+
+@keyframes rotateYellowSquare{
+    0%{
+
+
+    }
+
+    100%{
+        transform: rotate(-90deg);
+        transform-origin: top right;
+    }
+}
+
+.blue_square{
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    background-color:blue;
+    animation: rotateBlueSquare 1s;
+    animation-play-state: paused;
+
+   
+}
+
+@keyframes rotateBlueSquare{
+    0%{
+
+
+    }
+
+    100%{
+        transform: rotate(-90deg);
+        transform-origin: bottom left;
+    }
+}
+
+.green_square{
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    background-color: green;
+    animation: rotateGreenSquare 1s;
+    animation-play-state: paused;
+
+}
+
+@keyframes rotateGreenSquare{
+    0%{
+
+
+    }
+
+    100%{
+        transform: rotate(90deg);
+        transform-origin: bottom right;
+    }
+}
+
+.red_square:hover, .blue_square:hover, .yellow_square:hover, .green_square:hover{
+    animation-play-state: running;
+}
