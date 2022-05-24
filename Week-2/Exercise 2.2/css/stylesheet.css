@@ -1,101 +1,66 @@
+body{
+    box-sizing: border-box;
+}
 
 .container{
-   
-    height: 100px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.square {
     width: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 200;
-    margin: auto;
-
+    height: 100px;
 }
 
-
-.red_square{
-    height: 50px;
-    width: 50px;
+.red {
     background-color: red;
-    animation: rotateRedSquare 1s;
-    animation-play-state: paused;
+    position: absolute;
+    transition: 1s;
+    transform-origin: top left;
+    transform: rotate(0deg);
 }
 
-@keyframes rotateRedSquare{
-    0%{
-    }
-
-    100%{
-        transform: rotate(90deg);
-        transform-origin: top left;
-    }
+.yellow {
+    background-color: yellow;
+    position: absolute;
+    transition: 1s;
+    transform-origin: top right;
+    transform: rotate(0deg);
+    margin-left: 100px;
 }
 
-.yellow_square{
-    height: 50px;
-    width: 50px;
-    background-color:yellow;
-    animation: rotateYellowSquare 1s;
-    animation-play-state: paused;
-
-   
+.blue {
+    background-color: blue;
+    position: absolute;
+    transition: 1s;
+    transform-origin: bottom left;
+    transform: rotate(0deg);
+    margin-top: 100px;
 }
 
-@keyframes rotateYellowSquare{
-    0%{
-
-
-    }
-
-    100%{
-        transform: rotate(-90deg);
-        transform-origin: top right;
-    }
+.yellow:hover, .blue:hover{
+    transform: rotate(-90deg);
 }
 
-.blue_square{
-    height: 50px;
-    width: 50px;
-    margin: auto;
-    background-color:blue;
-    animation: rotateBlueSquare 1s;
-    animation-play-state: paused;
-
-   
-}
-
-@keyframes rotateBlueSquare{
-    0%{
-
-
-    }
-
-    100%{
-        transform: rotate(-90deg);
-        transform-origin: bottom left;
-    }
-}
-
-.green_square{
-    height: 50px;
-    width: 50px;
-    margin: auto;
+.green {
     background-color: green;
-    animation: rotateGreenSquare 1s;
-    animation-play-state: paused;
-
+    position: absolute;
+    transition: 1s;
+    transform-origin: bottom right;
+    transform: rotate(0deg);
+    margin-top: 100px;
+    margin-left: 100px;
 }
 
-@keyframes rotateGreenSquare{
-    0%{
-
-
-    }
-
-    100%{
-        transform: rotate(90deg);
-        transform-origin: bottom right;
-    }
+.red:hover, .green:hover {
+    transform: rotate(90deg);
 }
 
-.red_square:hover, .blue_square:hover, .yellow_square:hover, .green_square:hover{
-    animation-play-state: running;
+h1{
+    margin-top: 80px;
+    margin-left: 80px;
+    position: absolute;
 }
