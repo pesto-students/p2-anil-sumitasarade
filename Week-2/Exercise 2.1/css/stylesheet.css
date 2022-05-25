@@ -23,10 +23,15 @@ h1, h2, h3 {
     .flex-container {
       flex-direction: column;
       flex-wrap: wrap;
+      margin-top: 100px;
+    }
+
+    .main-content {
+      margin-top: 100px;
     }
   } 
 
-  input[type=text], select {
+  .text, .select {
     width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -36,7 +41,7 @@ h1, h2, h3 {
     box-sizing: border-box;
   }
   
-  input[type=submit] {
+  .submit {
     width: 50%;
     background-color: #4CAF50;
     color: white;
@@ -47,15 +52,9 @@ h1, h2, h3 {
     cursor: pointer;
   }
   
-  input[type=submit]:hover {
+  .submit:hover {
     background-color: #45a049;
   }
-
-  /* @media (max-width: 800px) {
-    .all-anime, .main-content {
-      flex: 100%;
-    }
-  } */
 
   .all-anime{
       flex: 20%;
