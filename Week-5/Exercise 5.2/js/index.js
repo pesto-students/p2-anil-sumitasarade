@@ -16,4 +16,4 @@ function vowelCount(str) {
 }
 
 const vowels = vowelCount('asiogha');
-console.log(vowel);
+console.log(vowels);
