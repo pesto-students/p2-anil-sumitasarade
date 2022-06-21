@@ -1,0 +1,127 @@
+        body{
+            font-family: 'Lato';
+        }
+
+        a{
+            border:solid black;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            color: white;
+            height : 30%;
+            padding-left: 100px;
+            margin-bottom: 20px;
+            background-color: #454545;
+        }
+
+        .song-name{
+            margin-top: 50px;
+            margin-left: 20px;
+ 
+        }
+
+        .songs-table{
+            height : 45%;
+            padding-left: 70px;
+            margin-top: 0px;
+        }
+
+
+        .div__cattyboard-img {
+            margin-left: 50px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            float: left;
+        }
+
+        .song-name__artist, .song-name__description{
+            margin: 0px;
+            font-size: 10px;
+        }
+
+        .songs-table {
+            border-collapse: collapse;
+            width: 100%;
+            border: none;
+            font-size: 12px;
+            padding: 5px;
+            margin-bottom: 10%;
+        }
+
+        td, th {
+            text-align: left;
+            padding: 12px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .sidenav {
+            height: 83%;
+            width: 60px;
+            position: fixed;
+            z-index: 1;
+            margin-top: 8px;
+            background-color: #f2f2f2;
+            overflow-x: hidden;
+            padding-top: 20px;
+  
+        }
+
+        .sidenav i {
+            padding: 24px 8px 24px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: black;
+            display: block;
+            }
+
+        
+        .footer{
+            background-color: #43689b;
+            padding: 5px;
+        }
+
+        .footer__img{
+            height: 50px;
+            width: 50px;
+            margin-left: 5px; 
+                       
+        }
+
+        .footer__song-details{
+            display: inline-block;
+            color: white;
+            font-size: 10px;
+            margin-left: 10px;
+            vertical-align: top;
+            
+        }
+
+        .play-icons{
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 30%;
+            color: white;
+
+        }
+
+        span .la-step-backward, span .la-play, span .la-step-forward, span .la-undo-alt, span .la-random{
+            padding-left: 70px;
+            padding-right: 70px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .playlist-icons{
+            margin-top: 150px;
+        }
+
+        .playlist-icons i{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
