@@ -2,7 +2,7 @@ function maxSubArraySum(a)
 {  
     let current_sum = 0, maximum_sum = 0;  
    
-    for (let i = 0; i < a.length; i++)  
+    for (let i = 0; i < a.length; i++)                      //Time Complexity: O(n)
     {  
         current_sum = current_sum + a[i];  
         if (current_sum > maximum_sum)  
