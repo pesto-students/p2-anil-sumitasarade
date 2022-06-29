@@ -9,9 +9,9 @@ class Node {
 }
 
 function reverse(node) {
-var prev = null;
-var current = node;
-var next = null;
+let prev = null;
+let current = node;
+let next = null;
     while (current != null) {                           //Time Complexity = O(n)
         next = current.next;
         current.next = prev;

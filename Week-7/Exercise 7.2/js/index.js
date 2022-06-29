@@ -11,9 +11,9 @@ var head;
 		if (k == 0)
 			return;
 
-		var current = head;
+		let current = head;
 
-		var count = 1;
+		let count = 1;
 		while (count < k && current != null) {
 			current = current.next;
 			count++;
@@ -22,7 +22,7 @@ var head;
 		if (current == null)
 			return;
 
-		var kthNode = current;
+		let kthNode = current;
 
 		while (current.next != null)
 			current = current.next;

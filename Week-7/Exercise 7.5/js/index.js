@@ -1,7 +1,7 @@
 
 function printNextGreaterElement(arr, n)
 {
-	var s = [];
+	let s = [];
 
 	s.push(arr[0]);
 
@@ -29,8 +29,8 @@ function printNextGreaterElement(arr, n)
 	}
 }
 
-var arr = [1, 3, 2, 4];
-var n = arr.length;
+let arr = [1, 3, 2, 4];
+let n = arr.length;
 printNextGreaterElement(arr, n);
 
     //Time Complexity = O(n)

@@ -1,5 +1,5 @@
 
-	var head; // head of list
+	let head; // head of list
 
 	class Node {
 		constructor(val) {
@@ -10,7 +10,7 @@
 
 	function detectLoop(h) {
 	    
-		var s = new Set();
+		let s = new Set();
 		while (h != null) {
 			if (s.has(h))
 				return true;
@@ -23,12 +23,12 @@
 	}
 
 	function push(new_data) {
-        var new_node = new Node(new_data);
+        let new_node = new Node(new_data);
 	    new_node.next = head;
 	    head = new_node;
 	}
 	
-    var value = [1,3,4];
+    let value = [1,3,4];
 		for (i = value.length-1; i >= 0; i --)								   //Time Complexity = O(n)
 			push(value[i]);													//Space Complexity = O(n)
 
