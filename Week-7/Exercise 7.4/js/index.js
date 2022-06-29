@@ -35,6 +35,10 @@ function areBracketsBalanced(expr)
 			if (check == '(' || check == '{')
 				return false;
 			break;
+
+		default:
+			return false;
+			break;
 		}
 	}
 
