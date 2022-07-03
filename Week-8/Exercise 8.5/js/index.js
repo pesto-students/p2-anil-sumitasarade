@@ -1,5 +1,5 @@
 const findJudge = (N, trust) => {
-    // keep track of how many likes the element gives
+
     let likesCountList = {}
     
     let beingLikedCountList = {}
@@ -18,12 +18,15 @@ const findJudge = (N, trust) => {
         if(likesCountList[key] === 0) judge = key
     }
     
-    if(beingLikedCountList[judge] === N - 1) return judge
-    else return -1
+    if(beingLikedCountList[judge] === N - 1) 
+        return judge
+    else 
+        return -1;
+    }   
 };
 
 let findJudge1 = findJudge(3, [[1,3],[2,3],[3,1]]);
-console.log(findJudge1);
+document.write(findJudge1);
 
 
 

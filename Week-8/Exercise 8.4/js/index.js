@@ -50,15 +50,14 @@ Graph(6);
 addEdge(0, 1);
 addEdge(0, 2);
 addEdge(3, 5);
+addEdge(5, 4);
 addEdge(4, 3);
-addEdge(2, 3);
+
 
 
 let u = 0;
 let v = 5;
-if (isReachable(u, v))
-	document.write("There is a path from " + u +" to " + v+"<br>");
-else
-	document.write("There is no path from " + u +" to " + v+"<br>");
+	document.write(isReachable(u, v));
+
 
 
