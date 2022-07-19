@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const InputShortener = ({ setInputValue }) => {
+const Shortener = ({ setInputValue }) => {
   const [value, setValue] = useState("");
 
   const handleClick = () => {
@@ -24,4 +24,4 @@ const InputShortener = ({ setInputValue }) => {
   )
 }
 
-export default InputShortener
+export default Shortener

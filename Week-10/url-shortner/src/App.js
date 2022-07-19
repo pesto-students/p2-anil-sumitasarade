@@ -1,17 +1,16 @@
 import { useState } from "react";
-//import "./App.css";
-//import BackgroundAnimate from "./BackgroundAnimate";
-import InputShortener from "./InputShortener";
-import LinkResult from "./LinkResult";
+
+import Shortener from "./Shortener";
+import CopyUrl from "./CopyUrl";
 
 function App() {
   const [inputValue, setInputValue] = useState("");
 
   return (
     <div className="container">
-      <InputShortener setInputValue={setInputValue} />
+      <Shortener setInputValue={setInputValue} />
 
-      <LinkResult inputValue={inputValue} />
+      <CopyUrl inputValue={inputValue} />
     </div>
   );
 }

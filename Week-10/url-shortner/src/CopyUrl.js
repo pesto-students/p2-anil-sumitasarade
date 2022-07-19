@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import CopyToClipboard from "react-copy-to-clipboard";
 
-const LinkResult = ({ inputValue }) => {
+const CopyUrl = ({ inputValue }) => {
   const [shortenLink, setShortenLink] = useState("");
   const [copied, setCopied] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -59,4 +59,4 @@ const LinkResult = ({ inputValue }) => {
   );
 };
 
-export default LinkResult;
+export default CopyUrl;
