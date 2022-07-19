@@ -40,7 +40,7 @@ const CopyUrl = ({ inputValue }) => {
     return <p className="noData">Loading...</p>;
   }
   if (error) {
-    return <p className="noData">Something wne t wrong :(</p>;
+    return <p className="noData">Something went wrong :(</p>;
   }
 
   return (
