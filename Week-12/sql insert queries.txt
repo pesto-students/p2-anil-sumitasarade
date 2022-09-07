@@ -1,0 +1,23 @@
+
+insert into cities values(101,'pune','maharashtra'),(102,'mumbai','maharashtra'),(103,'bangalore','karnataka'),(104,'chennai','tamilnadu');
+
+insert into warehouses values(201,'abc pune', 101,'abc pune'),(202,'xyz pune', 101,'xyz pune'),(203,'lmn mumbai', 102,'lmn mumbai'),(204,'supreme bangalore', 103,'supreme bangalore'),(205, 'thermo chennai', 104, 'thermo chennai');
+
+insert into stores values(301,'thermax stores', 201), (302,'milton stores', 201), (303,'steel stores', 201), (304,'thermax stores', 201), (305,'dell stores', 202), (306,'amazon stores', 203), (307,'kart stores', 204), (308,'record stores', 204), (309,'auto stores', 205) ;
+
+insert into orders values(501,'2022-1-1'),(502,'2022-2-2'),(503,'2022-3-3'),(504,'2022-4-4'),(505,'2022-5-5'),(506,'2022-6-6'),(507,'2022-7-7'),(508,'2022-8-8'),(509,'2022-9-9'),(510,'2022-10-10');
+
+insert into customer values(401,'sumita','pune',101),(402,'mr patil','pune',101),(403,'abhijeet','mumbai',102),(404,'yogesh','bangalore',103),
+(405,'shrikant','pune',101),(406,'nikita','mumbai',102),(407,'aarti','chennai',104),(408,'sanket','pune',101),
+(409,'bhuma','bangalore',103),(410,'shubham','chennai',104);
+
+insert into items values(601,'top',2,400,301),(602,'shirt',3,500,301),(603,'jeans',4,600,301),(604,'dress',3,700,302),(605,'purse',3,800,303),
+(606,'bag',4,900,304),(607,'books',10,100,305),(608,'bracelet',2,110,306),(609,'ring',1,140,307),(610,'necklace',2,410,308),(611,'mask',2,50,309);
+
+insert into order_item values (701,501,601),(702,501,602),(703,501,602),(704,501,602),(705,502,602),(706,502,602),(707,503,603),
+(708,504,604),(709,505,605),(710,506,606),(711,507,607),(712,508,608),(713,509,609),(714,510,610),(715,510,611),(716,510,611),
+(717,504,604),(718,505,605),(719,506,606),(720,507,607),(721,508,608);
+
+insert into customer_order values(801,401,501),(802,401,502),(803,401,503),(804,402,504),(805,402,505),(806,403,506),(807,403,507),
+(808,404,508),(809,405,509),(810,406,510),(811,407,501),(812,408,502),(813,409,503),(814,410,504);
+

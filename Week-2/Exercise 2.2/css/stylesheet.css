@@ -1,0 +1,74 @@
+body{
+    box-sizing: border-box;
+}
+
+.main{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    background-color: red;
+    position: absolute;
+    transition: 1s;
+    transform-origin: top left;
+    transform: rotate(0deg);
+}
+
+.yellow {
+    background-color: yellow;
+    position: absolute;
+    transition: 1s;
+    transform-origin: top right;
+    transform: rotate(0deg);
+    margin-left: 100px;
+}
+
+.blue {
+    background-color: blue;
+    position: absolute;
+    transition: 1s;
+    transform-origin: bottom left;
+    transform: rotate(0deg);
+    margin-top: 100px;
+}
+
+.green {
+    background-color: green;
+    position: absolute;
+    transition: 1s;
+    transform-origin: bottom right;
+    transform: rotate(0deg);
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+h1 {
+    margin-top: 80px;
+    margin-left: 80px;
+    position: absolute;
+}
+
+.main:hover .red {
+    transform: rotate(90deg);
+}
+
+.main:hover .green {
+    transform: rotate(90deg);
+}
+
+.main:hover .yellow {
+    transform: rotate(-90deg);
+}
+
+.main:hover .blue {
+    transform: rotate(-90deg);
+}
